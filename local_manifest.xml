@@ -2,7 +2,7 @@
 <manifest>
 
         <remote name="skyblue" fetch="https://github.com/skyblueborb" />
-        <remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps" />
+        <remote name="mtg" fetch="https://gitlab.com/MindTheGapps/vendor_gapps" />
 
         <!-- Trees -->
         <project path="device/xiaomi/laurel_sprout" name="device_xiaomi_laurel_sprout"
@@ -11,6 +11,9 @@
             revision="lineage-18.1" remote="skyblue" />
         <project path="vendor/xiaomi/laurel_sprout" name="vendor_xiaomi_laurel_sprout"
             revision="lineage-20.0" remote="skyblue" />
+
+        <!-- Gapps -->
+        <project path="vendor/gapps" name="vendor_gapps" revision="tau" remote="mtg" />
 
         <!-- remove these original repos -->
         <remove-project name="LineageOS/android_frameworks_base" />
