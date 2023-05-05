@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <remote name="skyblue" fetch="https://github.com/skyblueborb" />
+
+        <!-- Trees -->
+        <project path="device/xiaomi/laurel_sprout" name="device_xiaomi_laurel_sprout"
+            revision="lineage-20.0" remote="skyblue" />
+        <project path="kernel/xiaomi/laurel_sprout" name="kernel_xiaomi_laurel_sprout"
+            revision="lineage-18.1" remote="skyblue" />
+        <project path="vendor/xiaomi/laurel_sprout" name="vendor_xiaomi_laurel_sprout"
+            revision="lineage-20.0" remote="skyblue" />
+
+        <!-- remove these original repos -->
+        <remove-project name="android_frameworks_base" />
+        <remove-project name="android_hardware_interfaces" />
+        <remove-project name="android_packages_apps_Settings" />
+        <remove-project name="android_vendor_lineage" />
+        <remove-project name="android_system_core" />
+        <remove-project name="android_packages_modules_Permission" />
+        <remove-project name="android_lineage-sdk" />
+        <remove-project name="android_packages_apps_LineageParts" />
+
+        <!-- replace the originals with these modified -->
+        <project path="frameworks/base" name="android_frameworks_base" remote="skyblue" revision="lineage-20.0" />
+        <project path="hardware/interfaces" name="android_hardware_interfaces" remote="skyblue" revision="lineage-20.0" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="skyblue" revision="lineage-20.0" />
+        <project path="vendor/lineage" name="android_vendor_lineage" remote="skyblue" revision="lineage-20.0" />
+        <project path="system/core" name="android_system_core" remote="skyblue" revision="lineage-20.0" />
+        <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="skyblue" revision="lineage-20.0" />
+        <project path="lineage-sdk/" name="android_lineage-sdk" remote="skyblue" revision="lineage-20.0" />
+        <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="skyblue" revision="lineage-20.0" />
+
+</manifest>
+
